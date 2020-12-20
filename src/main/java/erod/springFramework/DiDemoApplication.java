@@ -4,7 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
+import erod.springFramework.constroller.ConstructorInjectedController;
 import erod.springFramework.constroller.MyController;
+import erod.springFramework.constroller.PropertyInjectedController;
+import erod.springFramework.constroller.SetterInjectedController;
 
 @SpringBootApplication
 public class DiDemoApplication {
@@ -13,7 +16,10 @@ public class DiDemoApplication {
 		ApplicationContext ctx = SpringApplication.run(DiDemoApplication.class, args);
 		
 		MyController controller = (MyController)ctx.getBean("myController");
-		controller.hello();
+		System.out.println(controller.hello());
+		System.out.println(ctx.getBean(PropertyInjectedController.class).sayHello());
+		System.out.println(ctx.getBean(SetterInjectedController.class).sayHello());
+		System.out.println(ctx.getBean(ConstructorInjectedController.class).sayHello());
 		
 	}
 
