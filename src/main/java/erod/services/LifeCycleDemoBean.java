@@ -1,4 +1,4 @@
-package erod.springFramework.services;
+package erod.services;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;

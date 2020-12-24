@@ -1,4 +1,4 @@
-package erod.springFramework.services;
+package erod.services;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
@@ -11,7 +11,6 @@ public class PrimaryGreetingServiceImpl implements GreetingService{
 
 	@Override
 	public String sayGreeting() {
-		// TODO Auto-generated method stub
 		return "Hello - I was in Primary greeting service impl";
 	}
 	

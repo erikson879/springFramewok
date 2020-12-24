@@ -1,4 +1,4 @@
-package erod.springFramework.services;
+package erod.services;
 
 public interface GreetingService {
 	

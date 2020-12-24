@@ -5,8 +5,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import erod.services.GreetingServiceImpl;
 import erod.springFramework.constroller.SetterInjectedController;
-import erod.springFramework.services.GreetingServiceImpl;
 
 public class SetterInjectedControllerTest {
 

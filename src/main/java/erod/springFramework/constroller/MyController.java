@@ -2,7 +2,7 @@ package erod.springFramework.constroller;
 
 import org.springframework.stereotype.Controller;
 
-import erod.springFramework.services.GreetingService;
+import erod.services.GreetingService;
 
 @Controller
 public class MyController {

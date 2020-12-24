@@ -1,4 +1,4 @@
-package erod.springFramework.services;
+package erod.services;
 
 import org.springframework.stereotype.Service;
 
