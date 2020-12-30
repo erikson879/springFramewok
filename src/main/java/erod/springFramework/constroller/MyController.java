@@ -1,5 +1,6 @@
 package erod.springFramework.constroller;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 import erod.services.GreetingService;
@@ -8,7 +9,7 @@ import erod.services.GreetingService;
 public class MyController {
 	private GreetingService greetingService;
 	
-	public MyController(GreetingService greetingService) {
+	public MyController(@Qualifier("constructorGreetingServiceImpl")GreetingService greetingService) {
 		super();
 		this.greetingService = greetingService;
 	}
